@@ -1,0 +1,21 @@
+﻿@model ProjeCore.Models.Birim
+@{
+    ViewData["Title"] = "YeniBirim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<form class="form-group" method="post">
+
+    <b>Birim Adı</b>
+    @Html.TextAreaFor(x => x.BirimAd, new { @class = "form-control" })
+    <br />
+
+
+    <button class="btn btn-primary"> Birim Ekle</button>
+
+
+
+</form>
+

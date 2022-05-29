@@ -1,0 +1,35 @@
+﻿@model ProjeCore.Models.Personel
+@{
+    ViewData["Title"] = "PersonelGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+@using (Html.BeginForm("PersonelGuncelle", "Personelim", FormMethod.Post))
+{
+    <b>Personel ID</b>
+    @Html.TextAreaFor(x => x.PersonelID, new { @class = "form-control" })
+    <br />
+
+
+    <b>Personel Adı</b>
+    @Html.TextAreaFor(x => x.Ad, new { @class = "form-control" })
+    <br />
+    <b>Personel Soyadı</b>
+    @Html.TextAreaFor(x => x.Soyad, new { @class = "form-control" })
+    <br />
+    <b>Personel Sehir</b>
+    @Html.TextAreaFor(x => x.Sehir, new { @class = "form-control" })
+    <br />
+    <b>Personel Birim</b>
+    @Html.TextAreaFor(x => x.BirimID, new { @class = "form-control" })
+    <br />
+
+
+    <button class="btn btn-warning"> Personel Güncelle</button>
+
+
+}
+

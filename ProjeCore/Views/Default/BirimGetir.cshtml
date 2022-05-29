@@ -1,0 +1,26 @@
+﻿@model ProjeCore.Models.Birim
+@{
+    ViewData["Title"] = "BirimGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+@using (Html.BeginForm("BirimGuncelle", "default", FormMethod.Post))
+{
+    <b>Birim ID</b>
+    @Html.TextAreaFor(x => x.BirimID, new { @class = "form-control" })
+    <br />
+
+
+    <b>Birim Adı</b>
+    @Html.TextAreaFor(x => x.BirimAd, new { @class = "form-control" })
+    <br />
+
+
+    <button class="btn btn-warning"> Birim Güncelle</button>
+
+
+}
+
